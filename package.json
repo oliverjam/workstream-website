@@ -10,12 +10,13 @@
     "css": "node-sass src/scss/main.scss --output-style compressed  -wo dist",
     "autoprefix": "postcss -u autoprefixer --no-map -r dist/*.css",
     "minify:html": "html-minifier --minify-css true -o dist/index.html src/index.html",
+    "watch:html": "watch 'npm run minify:html -s' src",
     "minify:js": "uglifyjs src/index.js --mangle --compress -o dist/index.js",
-    "minify": "npm run minify:html && npm run minify:js",
-    "build:css": "parallelshell 'npm run css -s' 'npm run autoprefix -s'",
-    "build": "parallelshell 'npm run minify -s' 'npm run build:css -s'",
+    "watch:js": "watch 'npm run minify:js -s' src",
+    "watch:css": "parallelshell 'npm run css -s' 'npm run autoprefix -s'",
+    "watch": "parallelshell 'npm run watch:html' 'npm run watch:js' 'npm run watch:css'",
     "serve": "browser-sync start -s --no-notify --serveStatic dist -f 'dist/*'",
-    "start": "parallelshell 'npm run serve' 'npm run build'"
+    "start": "parallelshell 'npm run serve' 'npm run watch'"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "html-minifier": "^3.4.1",
     "node-sass": "^4.5.0",
     "parallelshell": "^2.0.0",
-    "uglify-js": "^2.8.12"
+    "uglify-js": "^2.8.12",
+    "watch": "^1.0.2"
   }
 }
