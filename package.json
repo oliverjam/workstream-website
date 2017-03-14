@@ -8,7 +8,7 @@
     "postclean": "mkdir dist",
     "autoprefix": "postcss -u autoprefixer --no-map -r dist/*.css",
     "precss": "node-sass src/scss/main.scss --output-style compressed -o dist",
-    "css": "node-sass src/scss/main.scss --output-style compressed  -wo dist",
+    "css": "node-sass src/scss/main.scss --output-style compressed  -wo public",
     "postcss": "npm run autoprefix",
     "minify:html": "html-minifier --minify-css true -o dist/index.html src/index.html",
     "watch:html": "watch 'npm run minify:html -s' src",
@@ -16,7 +16,7 @@
     "watch:js": "watch 'npm run minify:js -s' src",
     "watch:css": "parallelshell 'npm run css -s' 'npm run autoprefix -s'",
     "watch": "parallelshell 'npm run watch:html' 'npm run watch:js' 'npm run watch:css'",
-    "serve": "browser-sync start -s --no-notify --serveStatic dist -f 'dist/*'",
+    "serve": "browser-sync start -s --no-notify --serveStatic public -f 'public/*'",
     "start": "parallelshell 'npm run serve' 'npm run css'"
   },
   "repository": {
