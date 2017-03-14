@@ -7,7 +7,7 @@
     "clean": "rm -r dist",
     "postclean": "mkdir dist",
     "autoprefix": "postcss -u autoprefixer --no-map -r dist/*.css",
-    "precss": "node-sass src/scss/main.scss --output-style compressed -o dist",
+    "precss": "node-sass src/scss/main.scss --output-style compressed -o public",
     "css": "node-sass src/scss/main.scss --output-style compressed  -wo public",
     "postcss": "npm run autoprefix",
     "minify:html": "html-minifier --minify-css true -o dist/index.html src/index.html",
