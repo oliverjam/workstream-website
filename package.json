@@ -1,0 +1,39 @@
+{
+  "name": "workstream-website",
+  "version": "1.0.0",
+  "description": "The new Workstream X marketing site",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -r dist",
+    "postclean": "mkdir dist",
+    "precss": "node-sass src/scss/main.scss --output-style compressed -o dist",
+    "css": "node-sass src/scss/main.scss --output-style compressed  -wo dist",
+    "autoprefix": "postcss -u autoprefixer --no-map -r dist/*.css",
+    "minify:html": "html-minifier --minify-css true -o dist/index.html src/index.html",
+    "minify:js": "uglifyjs src/index.js --mangle --compress -o dist/index.js",
+    "minify": "npm run minify:html && npm run minify:js",
+    "build:css": "parallelshell 'npm run css -s' 'npm run autoprefix -s'",
+    "build": "parallelshell 'npm run minify -s' 'npm run build:css -s'",
+    "serve": "browser-sync start -s --no-notify --serveStatic dist -f 'dist/*'",
+    "start": "parallelshell 'npm run serve' 'npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverjam/workstream-website.git"
+  },
+  "author": "oliverjam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverjam/workstream-website/issues"
+  },
+  "homepage": "https://github.com/oliverjam/workstream-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "clean-css": "^4.0.8",
+    "html-minifier": "^3.4.1",
+    "node-sass": "^4.5.0",
+    "parallelshell": "^2.0.0",
+    "uglify-js": "^2.8.12"
+  }
+}
