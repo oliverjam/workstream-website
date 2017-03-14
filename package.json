@@ -6,9 +6,10 @@
   "scripts": {
     "clean": "rm -r dist",
     "postclean": "mkdir dist",
+    "autoprefix": "postcss -u autoprefixer --no-map -r dist/*.css",
     "precss": "node-sass src/scss/main.scss --output-style compressed -o dist",
     "css": "node-sass src/scss/main.scss --output-style compressed  -wo dist",
-    "autoprefix": "postcss -u autoprefixer --no-map -r dist/*.css",
+    "postcss": "npm run autoprefix",
     "minify:html": "html-minifier --minify-css true -o dist/index.html src/index.html",
     "watch:html": "watch 'npm run minify:html -s' src",
     "minify:js": "uglifyjs src/index.js --mangle --compress -o dist/index.js",
@@ -16,7 +17,7 @@
     "watch:css": "parallelshell 'npm run css -s' 'npm run autoprefix -s'",
     "watch": "parallelshell 'npm run watch:html' 'npm run watch:js' 'npm run watch:css'",
     "serve": "browser-sync start -s --no-notify --serveStatic dist -f 'dist/*'",
-    "start": "parallelshell 'npm run serve' 'npm run watch'"
+    "start": "parallelshell 'npm run serve' 'npm run css'"
   },
   "repository": {
     "type": "git",
