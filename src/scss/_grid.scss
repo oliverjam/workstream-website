@@ -11,5 +11,9 @@
       text-align: center;
       flex-basis: 50%;
     }
+    &--first {
+      // Switches this to be first within its grid (regardless of HTML order)
+      order: -1;
+    }
   }
 }

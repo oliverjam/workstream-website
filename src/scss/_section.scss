@@ -1,15 +1,17 @@
 .section {
   padding: $space-xl $space-lg;
-  &--grey {
+  &--middle {
+    padding-top: ($space-xl * 2);
+    padding-bottom: ($space-xl * 2);
     background-color: $bg-mid;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     @media (min-width: 30em) {
-      clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
     }
   }
   @media (min-width: 30em) {
-    padding: $space-xl;
-    padding-top: ($space-xl * 2);
+    // padding: $space-xl;
+    // padding-top: ($space-xl * 2);
   }
   &__container {
   }
