@@ -13,13 +13,24 @@
     // padding: $space-xl;
     // padding-top: ($space-xl * 2);
   }
+  &--contact {
+    background-color: $primary;
+  }
   &__container {
+    &--center {
+      max-width: 40em;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   &__title {
     position: relative;
     text-align: left;
     // line-height: 1;
     // Create the little gold divider
+    & + p {
+      margin-top: $space-lg;
+    }
     &:after {
       content: '';
       position: absolute;

@@ -20,6 +20,13 @@ ul {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
 ul {
   list-style-type: none;
 }
@@ -30,6 +37,7 @@ img {
 }
 
 input,
+textarea,
 button {
   font-size: inherit;
   font-family: inherit;
