@@ -20,7 +20,9 @@
     align-items: center;
   }
   &__item {
-    margin-left: $space-lg;
+    @media (min-width: 30em) {
+      margin-left: $space-lg;
+    }
   }
   &__link {
     display: none;
