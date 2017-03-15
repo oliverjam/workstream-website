@@ -3,7 +3,18 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: $text-dark;
   @media (min-width: 30em) {
-    font-size: $base-font-size;
+    font-size: $font-size-medium;
+  }
+  @media (min-width: 50em) {
+    font-size: $font-size-large;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -22,4 +33,12 @@ body {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-right {
+  text-align: right;
 }

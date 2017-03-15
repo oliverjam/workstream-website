@@ -10,8 +10,8 @@
     }
   }
   @media (min-width: 30em) {
-    // padding: $space-xl;
-    // padding-top: ($space-xl * 2);
+    padding-left: $space-xl;
+    padding-right: $space-xl;
   }
   &--contact {
     background-color: $primary;

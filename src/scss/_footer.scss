@@ -1,0 +1,8 @@
+.footer {
+  padding: $space-lg;
+  color: $white;
+  background-color: $secondary;
+  &__copy {
+    text-align: left;
+  }
+}
