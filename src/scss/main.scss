@@ -1,5 +1,10 @@
-body {
-  color: red;
-  background-color: blue;
-  display: flex;
-}
+@import "reset";
+@import "variables";
+@import "base";
+@import "grid";
+@import "navbar";
+@import "section";
+@import "home";
+@import "about";
+@import "contact";
+@import "footer";

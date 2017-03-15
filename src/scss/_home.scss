@@ -1,0 +1,54 @@
+.home {
+  position: relative;
+  height: 50em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $text-light;
+  background-color: $bg-dark;
+  -webkit-font-smoothing: antialiased;
+  &__logo {
+    font-size: 15em;
+    line-height: 1;
+    color: $primary;
+  }
+  &__link {
+    position: absolute;
+    width: $space-lg;
+    left: 50%;
+    // Centre by shifting it half its width back left from 50%
+    left: calc(50% - (#{$space-lg} / 2));
+    bottom: 0;
+    color: inherit;
+  }
+  &__icon {
+    width: 100%;
+    stroke: currentColor;
+    &--bounce {
+      animation: bounce 1.5s 5s infinite both;
+      transform-origin: center bottom;
+    }
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}

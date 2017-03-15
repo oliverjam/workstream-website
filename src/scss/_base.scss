@@ -1,0 +1,10 @@
+body {
+  font-size: 1.125em;
+  line-height: 1.4;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+// Give any paragraph following an element a margin
+* + p {
+  margin-top: $space-md;
+}
