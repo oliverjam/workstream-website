@@ -16,7 +16,7 @@
     "watch:js": "watch 'npm run minify:js -s' src",
     "watch:css": "parallelshell 'npm run css -s' 'npm run autoprefix -s'",
     "watch": "parallelshell 'npm run watch:html' 'npm run watch:js' 'npm run watch:css'",
-    "serve": "browser-sync start -s --no-notify --serveStatic public -f 'public/*'",
+    "serve": "browser-sync start -s --no-notify --serveStatic -f 'index.html public/*'",
     "start": "parallelshell 'npm run serve' 'npm run css'"
   },
   "repository": {
