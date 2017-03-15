@@ -1,7 +1,9 @@
 body {
-  font-size: $base-font-size;
   line-height: 1.4;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  @media (min-width: 30em) {
+    font-size: $base-font-size;
+  }
 }
 
 // Give any paragraph following an element a margin

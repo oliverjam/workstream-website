@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: 50em;
+  min-height: 50em;
   min-height: 100vh;
   display: flex;
   // justify-content: center;
@@ -11,11 +11,11 @@
   -webkit-font-smoothing: antialiased;
   &__container {
     margin: 0 auto;
-    padding: $space-md;
+    padding: $space-xl $space-md;
     max-width: 40em;
   }
   &__logo {
-    font-size: 15em;
+    font-size: 12em;
     line-height: 1;
     color: $primary;
   }
