@@ -1,0 +1,15 @@
+.grid {
+  margin-top: ($space-lg * -1);
+  margin-left: ($space-lg * -1);
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    padding-top: $space-lg;
+    padding-left: $space-lg;
+    flex: 1 0 100%;
+    @media (min-width: 50em) {
+      text-align: center;
+      flex-basis: 50%;
+    }
+  }
+}

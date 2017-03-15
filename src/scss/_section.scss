@@ -1,10 +1,21 @@
 .section {
-  padding: $space-lg;
+  padding: $space-xl $space-lg;
+  &--grey {
+    background-color: $bg-mid;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    @media (min-width: 30em) {
+      clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    }
+  }
   @media (min-width: 30em) {
     padding: $space-xl;
+    padding-top: ($space-xl * 2);
+  }
+  &__container {
   }
   &__title {
     position: relative;
+    text-align: left;
     // line-height: 1;
     // Create the little gold divider
     &:after {
@@ -19,5 +30,6 @@
     }
   }
   &__copy {
+    text-align: left;
   }
 }
