@@ -3,11 +3,17 @@
   height: 50em;
   height: 100vh;
   display: flex;
+  // justify-content: center;
   align-items: center;
   text-align: center;
   color: $text-light;
   background-color: $bg-dark;
   -webkit-font-smoothing: antialiased;
+  &__container {
+    margin: 0 auto;
+    padding: $space-md;
+    max-width: 40em;
+  }
   &__logo {
     font-size: 15em;
     line-height: 1;
