@@ -5,14 +5,14 @@
   }
   &__title {
     position: relative;
-    line-height: 1;
+    // line-height: 1;
     // Create the little gold divider
     &:after {
       content: '';
       position: absolute;
       left: 0;
       // Get it the right distance from the title
-      bottom: ($space-md * -0.75);
+      bottom: ($space-md * -0.7);
       width: $space-lg;
       height: 5px;
       background-color: $primary;
