@@ -10,3 +10,7 @@ body {
 * + p {
   margin-top: $space-md;
 }
+
+h2 + p {
+  margin-top: $space-lg;
+}
