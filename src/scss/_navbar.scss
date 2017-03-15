@@ -1,0 +1,48 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: $space-md;
+  display: flex;
+  align-items: center;
+  color: $text-light;
+  z-index: 10;
+  &__logo {
+    height: 1em;
+  }
+  &__nav {
+    margin-left: auto;
+    font-size: 0.8em;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-left: $space-lg;
+  }
+  &__link {
+    display: none;
+    color: inherit;
+    text-decoration: none;
+    @media (min-width: 30em) {
+      display: block;
+    }
+    &:hover {
+      color: $primary;
+      border-bottom: 2px solid;
+    }
+    &--btn {
+      display: block;
+      padding: ($space-sm) $space-md;
+      color: $text-dark;
+      background-color: $primary;
+      border-radius: 20px;
+      &:hover {
+        color: $text-dark;
+        border-bottom: none;
+      }
+    }
+  }
+}
