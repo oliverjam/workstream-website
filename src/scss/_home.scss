@@ -17,9 +17,16 @@
     z-index: 10;
   }
   &__logo {
-    font-size: 12em;
-    line-height: 1;
-    color: $primary;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: $space-lg;
+    // font-size: 12em;
+    // line-height: 1;
+    // color: $primary;
+  }
+  &__icon {
+    width: 100%;
+    height: auto;
   }
   &__link {
     position: absolute;
@@ -34,8 +41,8 @@
     width: 100%;
     stroke: currentColor;
     &--bounce {
-      animation: bounce 1.5s 5s infinite both;
-      transform-origin: center bottom;
+      animation: bounce 0.75s 5s ease alternate infinite both;
+      // transform-origin: center bottom;
     }
   }
   &__bg {
@@ -84,25 +91,29 @@
   }
 }
 
+// @keyframes bounce {
+//   from, 20%, 53%, 80%, to {
+//     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+//     transform: translate3d(0,0,0);
+//   }
+//
+//   40%, 43% {
+//     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+//     transform: translate3d(0, -15px, 0);
+//   }
+//
+//   70% {
+//     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+//     transform: translate3d(0, -10px, 0);
+//   }
+//
+//   90% {
+//     transform: translate3d(0,-4px,0);
+//   }
+// }
+//
 @keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  70% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -10px, 0);
-  }
-
-  90% {
-    transform: translate3d(0,-4px,0);
-  }
+  to { transform: translate3d(0, -0.5em, 0) }
 }
 
 @keyframes burns {
