@@ -1,0 +1,55 @@
+.iphone {
+  position: relative;
+  font-size: 2em;
+  font-size: calc(1em + 1vmin);
+  width: 10em;
+  height: 20em;
+  background-color: hsl(40, 30, 95);
+  border: 4px solid hsl(200, 10, 80);
+  border-radius: 1.25em;
+  &__speaker {
+    position: relative;
+    margin: 0 auto;
+    top: 1em;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    &--circle {
+      width: 0.3em;
+      height: 0.3em;
+      background-color: hsl(200, 10, 20);
+      border-radius: 50%;
+    }
+    &--line {
+      margin: 0 auto;
+      width: 2em;
+      height: 0.2em;
+      background-color: hsl(200, 10, 20);
+      border-radius: 0.5em;
+    }
+  }
+  &__screen {
+    position: absolute;
+    top: 2em;
+    left: 0.5em;
+    width: 9em;
+    height: 16em;
+    border: 1px solid hsl(200, 10, 50);
+    border-radius: 0.1em;
+    overflow: hidden;
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__button {
+    position: relative;
+    margin: 0 auto;
+    top: 18em;
+    width: 1.2em;
+    height: 1.2em;
+    border: 3px solid hsl(200, 10, 70);
+    border-radius: 50%;
+  }
+}
