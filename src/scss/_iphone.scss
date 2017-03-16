@@ -1,6 +1,7 @@
 .iphone {
   box-sizing: content-box; // Stops border pushing things out of alignment
   position: relative;
+  margin: 0 auto;
   font-size: 2em;
   font-size: calc(1em + 1vmin);
   width: 10em;
