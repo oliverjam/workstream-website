@@ -9,10 +9,12 @@
   color: $text-light;
   background-color: $bg-dark;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
   &__container {
     margin: 0 auto;
     padding: $space-xl $space-md;
     max-width: 40em;
+    z-index: 10;
   }
   &__logo {
     font-size: 12em;
@@ -36,6 +38,50 @@
       transform-origin: center bottom;
     }
   }
+  &__bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    fill: hsla(0, 0, 100, 0.2);
+    transform: rotate(-20deg);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(
+      to right,
+      $secondary 10%,
+      hsla(0, 0, 100, 0.1)
+    );
+    transform: rotate(-20deg);
+    z-index: 0;
+    will-change: transform;
+    animation: burns 30s linear alternate infinite;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 30%;
+    height: 90%;
+    background: linear-gradient(
+      to top right,
+      $secondary 10%,
+      hsla(0, 0, 80, 0.1)
+    );
+    opacity: 0.2;
+    transform: rotate(-20deg);
+    z-index: 0;
+    will-change: transform;
+    animation: burns 30s linear alternate-reverse infinite;
+  }
 }
 
 @keyframes bounce {
@@ -56,5 +102,11 @@
 
   90% {
     transform: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes burns {
+  to {
+    transform: scale(1.5) rotate(-10deg);
   }
 }
