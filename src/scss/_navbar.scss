@@ -38,9 +38,17 @@
     }
     &--btn {
       display: block;
-      padding: ($space-sm) $space-md;
+      padding: ($space-sm) 1.5em;
+      font-size: 0.9em;
+      text-transform: uppercase;
       color: $text-dark;
       background-color: $primary;
+      background-image: linear-gradient(
+        50deg,
+        $primary 25%,
+        lighten($primary, 10%),
+        $primary 75%
+      );
       border-radius: 20px;
       &:hover {
         color: $text-dark;
