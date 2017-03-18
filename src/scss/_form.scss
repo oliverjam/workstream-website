@@ -19,12 +19,18 @@
     margin-left: auto;
     margin-right: auto;
     padding: $space-md $space-lg;
-    font-size: 0.8em;
+    font-size: 0.75em;
     line-height: 1;
     text-transform: uppercase;
     color: $white;
     background-color: $secondary;
+    background-image: linear-gradient(
+      to bottom,
+      lighten($secondary, 5%) 5%,
+      lighten($secondary, 10%),
+      $secondary 99%
+    );
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
   }
 }
