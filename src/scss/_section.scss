@@ -17,10 +17,10 @@
     background-color: $primary;
   }
   &__container {
-    &--center {
-      max-width: 40em;
-      margin: 0 auto;
-      text-align: center;
+    max-width: 60em;
+    margin: 0 auto;
+    &--small {
+      max-width: 32em;
     }
   }
   &__title {
