@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding: $space-xl $space-md;
     max-width: 40em;
-    z-index: 10;
+    z-index: 0; // Ensure background pseudoelements stay behind
   }
   &__logo {
     max-width: 50%;
