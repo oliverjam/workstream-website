@@ -17,7 +17,8 @@
     z-index: 0; // Ensure background pseudoelements stay behind
   }
   &__logo {
-    max-width: 50%;
+    max-width: 25%;
+    max-width: 24vmin;
     margin: 0 auto;
     margin-bottom: $space-lg;
     // font-size: 12em;
