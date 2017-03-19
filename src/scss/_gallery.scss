@@ -1,0 +1,33 @@
+.gallery {
+  &__input {
+    display: none;
+  }
+  &__label {
+  }
+  &__image {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    will-change: opacity;
+  }
+  &__container {
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    will-change: opacity;
+  }
+}
+
+@for $i from 1 through 4 {
+  #gallery#{$i}:checked ~ #galleryImages #galleryImg#{$i} {
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 4 {
+  #gallery#{$i}:checked ~ #galleryBody #galleryContent#{$i} {
+    opacity: 1;
+  }
+}

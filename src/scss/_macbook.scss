@@ -1,8 +1,7 @@
 .macbook {
-  box-sizing: content-box;
   position: relative;
-  font-size: 1em;
-  // font-size: calc(0.5em + 2vmin);
+  font-size: 0.8em;
+  // font-size: calc(1em + 2vmin);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +30,7 @@
   &__stand {
     position: relative;
     bottom: 0;
-    width: 22em;
+    width: 120%;
     height: 0.5em;
     display: flex;
     justify-content: center;
