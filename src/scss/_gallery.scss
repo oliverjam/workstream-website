@@ -11,8 +11,6 @@
   }
   &__container {
     position: relative;
-    display: flex;
-    align-items: center;
   }
   &__content {
     position: absolute;
@@ -21,7 +19,8 @@
     transition: opacity 0.5s;
     will-change: opacity;
     @media (min-width: 50em) {
-      top: initial;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
