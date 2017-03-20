@@ -62,11 +62,7 @@
     left: 20%;
     width: 100%;
     height: 90%;
-    background: linear-gradient(
-      to right,
-      $secondary 10%,
-      hsla(0, 0, 100, 0.1)
-    );
+    background-color: rgba((lighten($secondary, 10%)), 0.1);
     transform: rotate(-20deg);
     z-index: 0;
     will-change: transform;
@@ -79,12 +75,8 @@
     left: 0;
     width: 30%;
     height: 90%;
-    background: linear-gradient(
-      to top right,
-      $secondary 10%,
-      hsla(0, 0, 80, 0.1)
-    );
-    opacity: 0.2;
+    background-color: rgba((lighten($secondary, 8%)), 0.05);
+    // opacity: 0.2;
     transform: rotate(-20deg);
     z-index: 0;
     will-change: transform;
