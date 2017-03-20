@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: $space-md;
+  padding: $space-md $space-lg;
   display: flex;
   align-items: center;
   color: $text-light;
@@ -38,8 +38,9 @@
     }
     &--btn {
       display: block;
-      padding: ($space-sm) 1.5em;
-      font-size: 0.9em;
+      padding: 0.75em 1.5em;
+      font-size: 0.8em;
+      line-height: 1;
       text-transform: uppercase;
       color: $text-dark;
       background-color: $primary;
