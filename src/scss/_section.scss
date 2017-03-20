@@ -2,9 +2,12 @@
   padding: $space-xl $space-lg;
   &--middle {
     padding-top: ($space-xl * 2);
-    padding-bottom: ($space-xl * 2);
+    padding-bottom: ($space-xl * 7);
     background-color: $bg-mid;
     clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    @media (min-width: 50em) {
+      padding-bottom: ($space-xl * 2);
+    }
   }
   @media (min-width: 30em) {
     padding-left: $space-xl;

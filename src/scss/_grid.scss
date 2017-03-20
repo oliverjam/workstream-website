@@ -7,6 +7,9 @@
     padding-top: $space-lg;
     padding-left: $space-lg;
     flex: 1 0 100%;
+    &--half {
+      flex: 1 0 50%;
+    }
     @media (min-width: 50em) {
       flex-basis: 50%;
     }

@@ -16,9 +16,13 @@
   }
   &__content {
     position: absolute;
+    top: 100%;
     opacity: 0;
     transition: opacity 0.5s;
     will-change: opacity;
+    @media (min-width: 50em) {
+      top: initial;
+    }
   }
 }
 
