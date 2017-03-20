@@ -2,15 +2,17 @@
   &__input {
     display: none;
   }
-  &__label {
-  }
   &__image {
+    width: 100%;
+    height: auto;
     opacity: 0.5;
     transition: opacity 0.3s;
     will-change: opacity;
   }
   &__container {
     position: relative;
+    display: flex;
+    align-items: center;
   }
   &__content {
     position: absolute;
