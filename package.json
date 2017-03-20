@@ -42,8 +42,12 @@
     "watch": "^1.0.2"
   },
   "git": {
-  "scripts": {
-    "pre-push": "surge --project public ./ --domain workstreamx.surge.sh"
+    "scripts": {
+      "pre-push": "surge --project public ./ --domain workstreamx.surge.sh"
+    }
+  },
+  "dependencies": {
+    "smooth-scroll": "^0.1.4",
+    "zenscroll": "^4.0.0"
   }
-}
 }
