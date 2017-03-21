@@ -5,4 +5,10 @@
   &__copy {
     text-align: left;
   }
+  &__logo {
+    max-width: 10em;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
 }
