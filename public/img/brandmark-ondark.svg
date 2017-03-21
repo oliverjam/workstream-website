@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 376.7 429.3">
+  <g>
+    <g>
+      <g>
+        <linearGradient id="a" x1="135.4" x2="246.6" y1="390.9" y2="29.4" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#FDC865"/>
+          <stop offset=".4" stop-color="#F9E6BD"/>
+          <stop offset="1" stop-color="#FDC865"/>
+        </linearGradient>
+        <path fill="url(#a)" d="M13 11.8h68.2l108 175.4 108-175.4h68.3L207 215l159 203.7h-68.4L189.4 244.3 81.2 418.7H13l158.6-203.2"/>
+        <path fill="#FDD378" d="M367 419.2h-69.6l-.2-.2-107.8-173.8-108 174H12l159-203.7L12 11.3h69.5l107.7 175L297 11.3h69.6l-.7 1L207.4 215 367 419.3zm-69-1h66.8l-158.5-203 .2-.4 158-202.5h-67L189.3 188 81 12.4H14l158.2 203.2L14 418.2h67l108.4-174.8L298 418.2z"/>
+      </g>
+    </g>
+    <defs>
+      <filter id="b" width="354.9" height="407.9" x="11.9" y="11.3" filterUnits="userSpaceOnUse">
+        <feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+      </filter>
+    </defs>
+    <mask id="c" width="354.9" height="407.9" x="11.9" y="11.3" maskUnits="userSpaceOnUse">
+      <g filter="url(#b)">
+        <image width="1496" height="1717" overflow="visible" xlink:href="47470438C0314E25.jpg" transform="matrix(.24 0 0 .24 9.94 9.34)"/>
+      </g>
+    </mask>
+    <g opacity=".6" mask="url(#c)">
+      <g fill="#F9B558">
+        <path d="M13 11.8h68.2l108 175.4 108-175.4h68.3L207 215l159 203.7h-68.4L189.4 244.3 81.2 418.7H13l158.6-203.2"/>
+        <path d="M367 419.2h-69.6l-.2-.2-107.8-173.8-108 174H12l159-203.7L12 11.3h69.5l107.7 175L297 11.3h69.6l-.7 1L207.4 215 367 419.3zm-69-1h66.8l-158.5-203 .2-.4 158-202.5h-67L189.3 188 81 12.4H14l158.2 203.2L14 418.2h67l108.4-174.8L298 418.2z"/>
+      </g>
+    </g>
+  </g>
+</svg>

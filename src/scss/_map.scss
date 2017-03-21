@@ -1,0 +1,12 @@
+.map {
+  &__twinkle {
+    &--active {
+      animation: twinkle 2.7s alternate infinite;
+    }
+  }
+}
+
+@keyframes twinkle {
+  80%  { fill: #231F20;}
+  100% { fill: $primary; }
+}
