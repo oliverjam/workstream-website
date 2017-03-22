@@ -39,6 +39,10 @@
     border: 1px solid hsl(200, 10, 50);
     border-radius: 0.1em;
     overflow: hidden;
+    & > * {
+      width: 100%;
+      height: auto;
+    }
   }
   &__content {
     width: 100%;
