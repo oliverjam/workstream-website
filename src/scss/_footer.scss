@@ -1,14 +1,19 @@
 .footer {
   padding: $space-lg;
+  display: flex;
+  flex-wrap: wrap;
   color: $white;
   background-color: $secondary;
   &__copy {
-    text-align: left;
+    flex: 1 0 auto;
   }
   &__logo {
-    max-width: 10em;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+    margin: $space-lg auto 0 auto;
+    @media (min-width: 40em) {
+      margin: 0;
+    }
+    & > img {
+      width: 100%;
+    }
   }
 }
