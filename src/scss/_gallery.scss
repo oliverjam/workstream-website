@@ -11,15 +11,20 @@
   }
   &__container {
     position: relative;
+    @media (min-width: 40em) {
+      padding-left: $space-xl;
+    }
   }
   &__content {
     position: absolute;
     top: 100%;
+    left: 2rem;
     opacity: 0;
     transition: opacity 0.5s;
     will-change: opacity;
     @media (min-width: 50em) {
       top: 50%;
+      left: auto;
       transform: translateY(-50%);
     }
   }
