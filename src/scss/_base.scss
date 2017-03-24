@@ -1,7 +1,9 @@
 body {
   line-height: 1.4;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Lato','Avenir', Helvetica, Arial, sans-serif;
   color: $text-dark;
+  -webkit-font-smoothing: antialiased;
   @media (min-width: 30em) {
     font-size: $font-size-medium;
   }
