@@ -13,13 +13,5 @@
     @media (min-width: 50em) {
       flex-basis: 50%;
     }
-    &--first {
-      // Switches this to be first within its grid (regardless of HTML order)
-      order: -1;
-    }
-    &--center {
-      display: flex;
-      align-items: center;
-    }
   }
 }

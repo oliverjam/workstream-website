@@ -22,12 +22,6 @@
     &--small {
       max-width: 32em;
     }
-    &--large {
-      max-width: 80em;
-    }
-    & + & {
-      margin-top: $space-xl;
-    }
   }
   &__title {
     position: relative;
