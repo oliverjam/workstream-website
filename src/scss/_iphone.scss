@@ -1,11 +1,17 @@
+.device__container {
+  position: relative;
+}
+
 .iphone {
   box-sizing: content-box; // Stops border pushing things out of alignment
-  position: relative;
-  margin: 0 auto;
+  position: absolute;
+  right: -1em;
+  bottom: -2em;
+  // margin: 0 auto;
   font-size: 1em;
-  // font-size: calc(1em + 1vmin);
-  width: 10em;
-  height: 20em;
+  font-size: calc(0.25em + 2vmin);
+  width: 7em;
+  height: 14em;
   background-color: hsl(40, 30, 95);
   border: 4px solid hsl(200, 10, 80);
   border-radius: 1.25em;
@@ -34,8 +40,8 @@
     position: absolute;
     top: 2em;
     left: 0.5em;
-    width: 9em;
-    height: 16em;
+    width: 6em;
+    height: 10.5em;
     border: 1px solid hsl(200, 10, 50);
     border-radius: 0.1em;
     overflow: hidden;
@@ -50,12 +56,14 @@
     object-fit: cover;
   }
   &__button {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    top: 18em;
-    width: 1.2em;
-    height: 1.2em;
-    border: 3px solid hsl(200, 10, 70);
+    left: 50%;
+    bottom: 0.25em;
+    transform: translateX(-50%);
+    width: 0.75em;
+    height: 0.75em;
+    border: 2px solid hsl(200, 10, 70);
     border-radius: 50%;
   }
 }
