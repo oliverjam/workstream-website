@@ -5,9 +5,13 @@
   &__image {
     width: 100%;
     height: auto;
-    opacity: 0.5;
+    opacity: 0.4;
     transition: opacity 0.3s;
     will-change: opacity;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
   }
   &__container {
     position: relative;
