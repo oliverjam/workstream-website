@@ -5,7 +5,14 @@
   color: $white;
   background-color: $secondary;
   &__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     flex: 1 0 auto;
+    @media (min-width: 40em) {
+      text-align: left;
+    }
   }
   &__logo {
     margin: $space-lg auto 0 auto;
