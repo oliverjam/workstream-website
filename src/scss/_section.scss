@@ -6,10 +6,11 @@
     background-color: $bg-mid;
     clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     @media (min-width: 50em) {
-      padding-bottom: $space-xxl;
+      padding-top: ($space-xxl * 1.75);
+      padding-bottom: ($space-xxl * 1.75);
     }
   }
-  @media (min-width: 30em) {
+  @media (min-width: 40em) {
     padding-left: $space-xl;
     padding-right: $space-xl;
   }
