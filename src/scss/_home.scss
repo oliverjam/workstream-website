@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding: $space-xl $space-md;
     max-width: 40em;
-    z-index: 0; // Ensure background pseudoelements stay behind
+    z-index: 10; // Ensure background pseudoelements stay behind
   }
   &__logo {
     max-width: 25%;
@@ -64,32 +64,34 @@
     height: 100%;
     background-color: rgba((lighten($secondary, 10%)), 0.1);
     background: linear-gradient(
-      to right,
-      $secondary 10%,
-      hsla(0, 0, 100, 0.1)
+      to left,
+      lighten($secondary, 5%),
+      rgba($secondary, 0)
     );
-    transform: rotate(-10deg);
+    transform: rotate(-15deg);
     z-index: 0;
-    will-change: transform;
     // animation: burns 30s linear alternate infinite;
   }
   &::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30%;
-    height: 100%;
+    bottom: -20%;
+    left: -10%;
+    width: 45%;
+    height: 90%;
     background-color: rgba((lighten($secondary, 8%)), 0.05);
-    background: linear-gradient(
-      to top right,
-      $secondary 10%,
-      hsla(0, 0, 80, 0.1)
+    // background: linear-gradient(
+    //   to top right,
+    //   lighten($secondary, 2%),
+    //   rgba($secondary, 0)
+    // );
+    background: radial-gradient(
+      circle at bottom right,
+      lighten($secondary, 3%),
+      rgba($secondary, 0) 30%
     );
-    opacity: 0.2;
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
     z-index: 0;
-    will-change: transform;
     // animation: burns 30s linear alternate-reverse infinite;
   }
 }
