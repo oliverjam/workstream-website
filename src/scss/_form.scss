@@ -33,5 +33,13 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    &:hover {
+      background-image: linear-gradient(
+        to bottom,
+        lighten($secondary, 12%) 5%,
+        lighten($secondary, 17%),
+        lighten($secondary, 2%) 99%
+      );
+    }
   }
 }
