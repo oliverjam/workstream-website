@@ -5,6 +5,7 @@
   color: $white;
   background-color: $secondary;
   &__copy {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
