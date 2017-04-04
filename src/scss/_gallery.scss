@@ -1,4 +1,12 @@
 .gallery {
+  position: relative;
+  &__caption {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin: 0 $space-lg;
+    font-size: 0.875em;
+  }
   &__input {
     display: none;
   }
